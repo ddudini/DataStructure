@@ -107,3 +107,60 @@ void testPQ(){
     }
     pq.printNode();
 }
+
+void testCHT(){
+    CHT ht = CHT(12289);
+    ht.set("MSFT","Microsoft Corporation");
+    ht.set("JAVA", "Sun Microsystem");
+    ht.set("REDH",   "Red Hat Linux");
+    ht.set("APAC",   "Apache Org");
+    ht.set("ZYMZZ",  "Unisys Ops Check");
+    ht.set("IBM",    "IBM Ltd.");
+    ht.set("ORCL",   "Oracle Corporation");
+    ht.set("CSCO",   "Cisco Systems, Inc.");
+    ht.set("GOOG",   "Google Inc.");
+    ht.set("YHOO",   "Yahoo! Inc.");
+    ht.set("NOVL",   "Novell, Inc.");
+    
+    printf("\n");
+    printf("Key:%s, Value:%s\n", "MSFT",   ht.get( "MSFT" ).c_str() );
+    printf("Key:%s, Value:%s\n", "REDH",   ht.get( "REDH" ).c_str() );
+    printf("Key:%s, Value:%s\n", "APAC",   ht.get( "APAC" ).c_str() );
+    printf("Key:%s, Value:%s\n", "ZYMZZ",  ht.get( "ZYMZZ" ).c_str() );
+    printf("Key:%s, Value:%s\n", "JAVA",   ht.get( "JAVA" ).c_str() );
+    printf("Key:%s, Value:%s\n", "IBM",    ht.get( "IBM" ).c_str() );
+    printf("Key:%s, Value:%s\n", "ORCL",   ht.get( "ORCL" ).c_str() );
+    printf("Key:%s, Value:%s\n", "CSCO",   ht.get( "CSCO" ).c_str() );
+    printf("Key:%s, Value:%s\n", "GOOG",   ht.get( "GOOG" ).c_str() );
+    printf("Key:%s, Value:%s\n", "YHOO",   ht.get( "YHOO" ).c_str() );
+    printf("Key:%s, Value:%s\n", "NOVL",   ht.get( "NOVL" ).c_str() );
+}
+
+void testOAHT(){
+    OAHT ht = OAHT(11);
+    
+    ht.set("MSFT","Microsoft Corporation");
+    ht.set("JAVA", "Sun Microsystem");
+    ht.set("REDH",   "Red Hat Linux");
+    ht.set("APAC",   "Apache Org");
+    ht.set("ZYMZZ",  "Unisys Ops Check");
+    ht.set("IBM",    "IBM Ltd.");
+    ht.set("ORCL",   "Oracle Corporation");
+    ht.set("CSCO",   "Cisco Systems, Inc.");
+    ht.set("GOOG",   "Google Inc.");
+    ht.set("YHOO",   "Yahoo! Inc.");
+    ht.set("NOVL",   "Novell, Inc.");
+    
+    printf("\n");
+    printf("Key:%s, Value:%s\n", "MSFT",   ht.get( "MSFT" ).c_str() );
+    printf("Key:%s, Value:%s\n", "REDH",   ht.get( "REDH" ).c_str() );
+    printf("Key:%s, Value:%s\n", "APAC",   ht.get( "APAC" ).c_str() );
+    printf("Key:%s, Value:%s\n", "ZYMZZ",  ht.get( "ZYMZZ" ).c_str() );
+    printf("Key:%s, Value:%s\n", "JAVA",   ht.get( "JAVA" ).c_str() );
+    printf("Key:%s, Value:%s\n", "IBM",    ht.get( "IBM" ).c_str() );
+    printf("Key:%s, Value:%s\n", "ORCL",   ht.get( "ORCL" ).c_str() );
+    printf("Key:%s, Value:%s\n", "CSCO",   ht.get( "CSCO" ).c_str() );
+    printf("Key:%s, Value:%s\n", "GOOG",   ht.get( "GOOG" ).c_str() );
+    printf("Key:%s, Value:%s\n", "YHOO",   ht.get( "YHOO" ).c_str() );
+    printf("Key:%s, Value:%s\n", "NOVL",   ht.get( "NOVL" ).c_str() );
+}

@@ -6,7 +6,9 @@ int main(int argc, const char * argv[]) {
     //testDLL();
 //    testRBT();
 //    testHeap();
-    testPQ();
+//    testPQ();
+//    testCHT();
+    testOAHT();
 }
 
 

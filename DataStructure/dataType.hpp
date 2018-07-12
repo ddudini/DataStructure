@@ -9,6 +9,8 @@
 #include "RBT.hpp"
 #include "PriorityQueue.hpp"
 #include "Heap.hpp"
+#include "ChainHashTable.hpp"
+#include "OpenAddressingHashTable.hpp"
 
 
 using namespace std;
@@ -18,6 +20,8 @@ void testDLL();
 void testRBT();
 void testHeap();
 void testPQ();
+void testCHT();
+void testOAHT();
 
 
 #endif /* dataType_hpp */
