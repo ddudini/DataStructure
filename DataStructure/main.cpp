@@ -8,7 +8,8 @@ int main(int argc, const char * argv[]) {
 //    testHeap();
 //    testPQ();
 //    testCHT();
-    testOAHT();
+//    testOAHT();
+    testGraph();
 }
 
 

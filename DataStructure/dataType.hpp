@@ -11,6 +11,7 @@
 #include "Heap.hpp"
 #include "ChainHashTable.hpp"
 #include "OpenAddressingHashTable.hpp"
+#include "Graph.hpp"
 
 
 using namespace std;
@@ -22,6 +23,7 @@ void testHeap();
 void testPQ();
 void testCHT();
 void testOAHT();
+void testGraph();
 
 
 #endif /* dataType_hpp */

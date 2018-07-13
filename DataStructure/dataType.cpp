@@ -164,3 +164,74 @@ void testOAHT(){
     printf("Key:%s, Value:%s\n", "YHOO",   ht.get( "YHOO" ).c_str() );
     printf("Key:%s, Value:%s\n", "NOVL",   ht.get( "NOVL" ).c_str() );
 }
+
+void testGraph(){
+    Graph G;
+    
+    /*  정점 생성 */
+    Vertex* V1 = new Vertex( 1 );
+    Vertex* V2 = new Vertex( 2 );
+    Vertex* V3 = new Vertex( 3 );
+    Vertex* V4 = new Vertex( 4 );
+    Vertex* V5 = new Vertex( 5 );
+    
+    /*  그래프에 정점을 추가 */
+    G.AddVertex( V1 );
+    G.AddVertex( V2 );
+    G.AddVertex( V3 );
+    G.AddVertex( V4 );
+    G.AddVertex( V5 );
+    
+    /*  정점과 정점을 간선으로 잇기 */
+    G.AddEdge(new Edge(V1, V2, 0) );
+    G.AddEdge(new Edge(V1, V3, 0) );
+    G.AddEdge(new Edge(V1, V4, 0) );
+    G.AddEdge(new Edge(V1, V5, 0) );
+    
+    G.AddEdge(new Edge(V2, V1, 0) );
+    G.AddEdge(new Edge(V2, V3, 0) );
+    G.AddEdge(new Edge(V2, V5, 0) );
+    
+    G.AddEdge(new Edge(V3, V1, 0) );
+    G.AddEdge(new Edge(V3, V2, 0) );
+    
+    G.AddEdge(new Edge(V4, V1, 0) );
+    G.AddEdge(new Edge(V4, V5, 0) );
+    
+    G.AddEdge(new Edge(V5, V1, 0) );
+    G.AddEdge(new Edge(V5, V2, 0) );
+    G.AddEdge(new Edge(V5, V4, 0) );
+    
+    G.printGraph();
+    
+    
+    //배열 그래프
+    Graph2 G2 = Graph2(5);
+    G2.AddVertex(1);
+    G2.AddVertex(2);
+    G2.AddVertex(3);
+    G2.AddVertex(4);
+    G2.AddVertex(5);
+    
+    G2.AddEdge(1, 2, 0);
+    G2.AddEdge(1, 3, 0);
+    G2.AddEdge(1, 4, 0);
+    G2.AddEdge(1, 5, 0);
+    
+    G2.AddEdge(2, 1, 0);
+    G2.AddEdge(2, 3, 0);
+    G2.AddEdge(2, 5, 0);
+    
+    G2.AddEdge(3, 1, 0);
+    G2.AddEdge(3, 2, 0);
+    
+    G2.AddEdge(4, 1, 0);
+    G2.AddEdge(4, 5, 0);
+    
+    G2.AddEdge(5, 1, 0);
+    G2.AddEdge(5, 2, 0);
+    G2.AddEdge(5, 4, 0);
+    
+    G2.printGraph2();
+
+}
