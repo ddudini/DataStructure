@@ -18,8 +18,12 @@
 		0622A43520F3987B009422FB /* RBT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0622A43320F3987B009422FB /* RBT.cpp */; };
 		0622A43A20F46E97009422FB /* Heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0622A43820F46E97009422FB /* Heap.cpp */; };
 		0622A43D20F47E31009422FB /* PriorityQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0622A43B20F47E31009422FB /* PriorityQueue.cpp */; };
+		06919EFA20F8558B0096A77B /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06919EF820F8558B0096A77B /* Graph.cpp */; };
+		06BA5D9C20FC46FF00DF2592 /* DisjointSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06BA5D9A20FC46FF00DF2592 /* DisjointSet.cpp */; };
 		06C2C17120F714DA000BD202 /* dataType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06C2C16E20F714DA000BD202 /* dataType.cpp */; };
 		06C2C17220F714DA000BD202 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06C2C16F20F714DA000BD202 /* main.cpp */; };
+		06C2C17820F71A34000BD202 /* ChainHashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06C2C17620F71A34000BD202 /* ChainHashTable.cpp */; };
+		06C2C17B20F72629000BD202 /* OpenAddressingHashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06C2C17920F72629000BD202 /* OpenAddressingHashTable.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,9 +62,17 @@
 		0622A43920F46E97009422FB /* Heap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Heap.hpp; sourceTree = "<group>"; };
 		0622A43B20F47E31009422FB /* PriorityQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PriorityQueue.cpp; sourceTree = "<group>"; };
 		0622A43C20F47E31009422FB /* PriorityQueue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PriorityQueue.hpp; sourceTree = "<group>"; };
+		06919EF820F8558B0096A77B /* Graph.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Graph.cpp; sourceTree = "<group>"; };
+		06919EF920F8558B0096A77B /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
+		06BA5D9A20FC46FF00DF2592 /* DisjointSet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DisjointSet.cpp; sourceTree = "<group>"; };
+		06BA5D9B20FC46FF00DF2592 /* DisjointSet.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DisjointSet.hpp; sourceTree = "<group>"; };
 		06C2C16E20F714DA000BD202 /* dataType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dataType.cpp; path = DataStructure/dataType.cpp; sourceTree = "<group>"; };
 		06C2C16F20F714DA000BD202 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = DataStructure/main.cpp; sourceTree = "<group>"; };
 		06C2C17020F714DA000BD202 /* dataType.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = dataType.hpp; path = DataStructure/dataType.hpp; sourceTree = "<group>"; };
+		06C2C17620F71A34000BD202 /* ChainHashTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ChainHashTable.cpp; sourceTree = "<group>"; };
+		06C2C17720F71A34000BD202 /* ChainHashTable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChainHashTable.hpp; sourceTree = "<group>"; };
+		06C2C17920F72629000BD202 /* OpenAddressingHashTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenAddressingHashTable.cpp; sourceTree = "<group>"; };
+		06C2C17A20F72629000BD202 /* OpenAddressingHashTable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpenAddressingHashTable.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,16 +89,19 @@
 		0617B6F920F082F5009F0E84 = {
 			isa = PBXGroup;
 			children = (
+				06BA5D9920FC46D600DF2592 /* Disjoint */,
 				06C2C16E20F714DA000BD202 /* dataType.cpp */,
-				06C2C17020F714DA000BD202 /* dataType.hpp */,
 				06C2C16F20F714DA000BD202 /* main.cpp */,
+				06C2C17020F714DA000BD202 /* dataType.hpp */,
+				06919EF720F855660096A77B /* Graph */,
+				06C2C17520F71A05000BD202 /* HashTable */,
 				0622A43620F46E73009422FB /* Heap */,
+				0617B71620F08348009F0E84 /* List */,
+				0617B70320F082F5009F0E84 /* Products */,
+				0617B71D20F08369009F0E84 /* Queue */,
 				0617B72820F08841009F0E84 /* Sort Algorithm */,
 				0617B72120F08380009F0E84 /* Stack */,
-				0617B71D20F08369009F0E84 /* Queue */,
-				0617B71620F08348009F0E84 /* List */,
 				0617B70C20F08314009F0E84 /* Tree */,
-				0617B70320F082F5009F0E84 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +177,35 @@
 			path = Heap;
 			sourceTree = "<group>";
 		};
+		06919EF720F855660096A77B /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				06919EF820F8558B0096A77B /* Graph.cpp */,
+				06919EF920F8558B0096A77B /* Graph.hpp */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		06BA5D9920FC46D600DF2592 /* Disjoint */ = {
+			isa = PBXGroup;
+			children = (
+				06BA5D9A20FC46FF00DF2592 /* DisjointSet.cpp */,
+				06BA5D9B20FC46FF00DF2592 /* DisjointSet.hpp */,
+			);
+			path = Disjoint;
+			sourceTree = "<group>";
+		};
+		06C2C17520F71A05000BD202 /* HashTable */ = {
+			isa = PBXGroup;
+			children = (
+				06C2C17620F71A34000BD202 /* ChainHashTable.cpp */,
+				06C2C17720F71A34000BD202 /* ChainHashTable.hpp */,
+				06C2C17920F72629000BD202 /* OpenAddressingHashTable.cpp */,
+				06C2C17A20F72629000BD202 /* OpenAddressingHashTable.hpp */,
+			);
+			path = HashTable;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,12 +266,16 @@
 				0622A43D20F47E31009422FB /* PriorityQueue.cpp in Sources */,
 				0617B73F20F08B17009F0E84 /* LDRS.cpp in Sources */,
 				0617B73720F08B10009F0E84 /* DLL.cpp in Sources */,
+				06BA5D9C20FC46FF00DF2592 /* DisjointSet.cpp in Sources */,
+				06C2C17820F71A34000BD202 /* ChainHashTable.cpp in Sources */,
 				0622A43A20F46E97009422FB /* Heap.cpp in Sources */,
 				0617B73120F08B08009F0E84 /* LQ.cpp in Sources */,
 				0617B72B20F0886D009F0E84 /* sort.cpp in Sources */,
 				0617B73E20F08B17009F0E84 /* BinaryTree.cpp in Sources */,
+				06C2C17B20F72629000BD202 /* OpenAddressingHashTable.cpp in Sources */,
 				0617B73620F08B10009F0E84 /* SLL.cpp in Sources */,
 				06C2C17120F714DA000BD202 /* dataType.cpp in Sources */,
+				06919EFA20F8558B0096A77B /* Graph.cpp in Sources */,
 				06C2C17220F714DA000BD202 /* main.cpp in Sources */,
 				0617B74020F08B17009F0E84 /* TreeCalculate.cpp in Sources */,
 				0617B72E20F08B01009F0E84 /* LLS.cpp in Sources */,
